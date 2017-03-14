@@ -18,3 +18,4 @@ fave_img3 = FaveImg.create(rover: 'opportunity', cam_name:'Navigation Camera',im
 fave_img4 = FaveImg.create(rover: 'opportunity', cam_name:'Navigation Camera',image_date:'2012-03-03', url:'http://mars.nasa.gov/mer/gallery/all/1/n/2881/1N383943522EDNBR43P1588R0M1-BR.JPG', user: user2)
 fave_img3 = FaveImg.create(rover: 'opportunity', cam_name:'Navigation Camera',image_date:'2012-03-03', url:'http://mars.nasa.gov/mer/gallery/all/1/n/2881/1N383943633EDNBR43P1588R0M1-BR.JPG', user: user1)
 fave_img3 = FaveImg.create(rover: 'opportunity', cam_name:'Navigation Camera',image_date:'2012-03-03', url:'http://mars.nasa.gov/mer/gallery/all/1/n/2881/1N383943545EDNBR43P1588R0M1-BR.JPG', user: user2)
+
