@@ -1,0 +1,2 @@
+class RoverManifest < ApplicationRecord
+end
