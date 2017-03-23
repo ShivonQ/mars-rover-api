@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rover_id: one
+  rover_manifest: MyString
+  cam_id: one
+  camera: MyString
+  date: MyString
+
+two:
+  rover_id: two
+  rover_manifest: MyString
+  cam_id: two
+  camera: MyString
+  date: MyString
