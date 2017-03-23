@@ -6,6 +6,7 @@ one:
   cam_id: one
   camera: MyString
   date: MyString
+  url: MyString
 
 two:
   rover_id: two
@@ -13,3 +14,4 @@ two:
   cam_id: two
   camera: MyString
   date: MyString
+  url: MyString

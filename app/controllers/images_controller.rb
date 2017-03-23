@@ -46,6 +46,6 @@ class ImagesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def image_params
-      params.require(:image).permit(:rover_id_id, :rover_manifest, :cam_id_id, :camera, :date)
+      params.require(:image).permit(:rover_id_id, :rover_manifest, :cam_id_id, :camera, :date, :url)
     end
 end
