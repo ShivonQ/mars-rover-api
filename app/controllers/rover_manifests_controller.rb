@@ -10,7 +10,7 @@ class RoverManifestsController < ApplicationController
 
   # GET /rover_manifests/1
   def show
-    render json: @rover_manifest, include: ['camera']
+    render json: @rover_manifest, include: ['cameras']
   end
 
   # POST /rover_manifests

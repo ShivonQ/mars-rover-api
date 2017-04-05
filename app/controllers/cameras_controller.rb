@@ -46,6 +46,6 @@ class CamerasController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def camera_params
-      params.require(:camera).permit(:name, :fullName, :rover_manifest)
+      params.require(:camera).permit(:name, :fullName, :rover_manifest_id)
     end
 end
