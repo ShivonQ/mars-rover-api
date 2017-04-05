@@ -5,10 +5,10 @@ class CreateRoverManifests < ActiveRecord::Migration[5.0]
       t.string :landing_date
       t.string :launch_date
       t.string :status
-      t.integer :max_sol
       t.string :max_date
       t.string :portrait
       t.integer :total_photos
+      t.integer :max_sol
 
       t.timestamps
     end
