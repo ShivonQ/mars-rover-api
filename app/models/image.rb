@@ -1,4 +1,4 @@
 class Image < ApplicationRecord
-  belongs_to :rover_id
-  belongs_to :cam_id
+  belongs_to :rover_manifest
+  belongs_to :camera
 end

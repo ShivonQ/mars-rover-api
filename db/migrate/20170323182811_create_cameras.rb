@@ -3,8 +3,7 @@ class CreateCameras < ActiveRecord::Migration[5.0]
     create_table :cameras do |t|
       t.string :name
       t.string :fullName
-      t.references :rover_id, foreign_key: true
-      t.string :rover_manifest
+      t.references :rover_manifest, foreign_key: true
 
       t.timestamps
     end

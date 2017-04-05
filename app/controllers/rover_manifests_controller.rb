@@ -10,7 +10,7 @@ class RoverManifestsController < ApplicationController
 
   # GET /rover_manifests/1
   def show
-    render json: @rover_manifest
+    render json: @rover_manifest, include: ['camera']
   end
 
   # POST /rover_manifests
@@ -46,6 +46,6 @@ class RoverManifestsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def rover_manifest_params
-      params.require(:rover_manifest).permit(:name, :landing_date, :launch_date, :status, :max_sol, :max_date, :portrait, :total_photos)
+      params.require(:rover_manifest).permit(:name, :landing_date, :launch_date, :status, :max_date, :portrait, :total_photos, :max_sol)
     end
 end

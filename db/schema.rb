@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170314190403) do
+ActiveRecord::Schema.define(version: 20170323184222) do
+
+  create_table "cameras", force: :cascade do |t|
+    t.string   "name"
+    t.string   "fullName"
+    t.integer  "rover_manifest_id"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.index ["rover_manifest_id"], name: "index_cameras_on_rover_manifest_id"
+  end
 
   create_table "fave_imgs", force: :cascade do |t|
     t.string   "rover"
@@ -23,15 +32,26 @@ ActiveRecord::Schema.define(version: 20170314190403) do
     t.index ["user_id"], name: "index_fave_imgs_on_user_id"
   end
 
+  create_table "images", force: :cascade do |t|
+    t.integer  "rover_manifest_id"
+    t.integer  "camera_id"
+    t.string   "date"
+    t.string   "url"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.index ["camera_id"], name: "index_images_on_camera_id"
+    t.index ["rover_manifest_id"], name: "index_images_on_rover_manifest_id"
+  end
+
   create_table "rover_manifests", force: :cascade do |t|
     t.string   "name"
     t.string   "landing_date"
     t.string   "launch_date"
     t.string   "status"
-    t.integer  "max_sol"
     t.string   "max_date"
     t.string   "portrait"
     t.integer  "total_photos"
+    t.integer  "max_sol"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end

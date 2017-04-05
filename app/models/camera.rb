@@ -1,3 +1,3 @@
 class Camera < ApplicationRecord
-  belongs_to :rover_id
+  belongs_to :rover_manifest
 end
