@@ -7,6 +7,7 @@ class CreateRoverManifests < ActiveRecord::Migration[5.0]
       t.string :status
       t.string :max_date
       t.string :portrait
+      t.string :miniPortrait
       t.integer :total_photos
       t.integer :max_sol
 
