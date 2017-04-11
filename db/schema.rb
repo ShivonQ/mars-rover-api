@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 20170323184222) do
     t.string   "status"
     t.string   "max_date"
     t.string   "portrait"
+    t.string   "miniPortrait"
     t.integer  "total_photos"
     t.integer  "max_sol"
     t.datetime "created_at",   null: false
